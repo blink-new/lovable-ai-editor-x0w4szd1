@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Zinc Dark Theme Variables */
+    --background: 240 10% 3.9%; /* zinc-900 */
+    --foreground: 240 6.7% 93.9%; /* zinc-100 */
+
+    --card: 240 9.8% 10%; /* zinc-800 */
+    --card-foreground: 240 6.7% 93.9%; /* zinc-100 */
+
+    --popover: 240 9.8% 10%; /* zinc-800 */
+    --popover-foreground: 240 6.7% 93.9%; /* zinc-100 */
+
+    --primary: 217.2 91.2% 59.8%; /* blue-600 */
+    --primary-foreground: 240 6.7% 93.9%; /* zinc-100 */
+
+    --secondary: 240 9% 15.1%; /* zinc-700 */
+    --secondary-foreground: 240 6.7% 93.9%; /* zinc-100 */
+
+    --muted: 240 9% 15.1%; /* zinc-700 */
+    --muted-foreground: 240 5.2% 63.9%; /* zinc-400 */
+
+    --accent: 240 9% 15.1%; /* zinc-700 */
+    --accent-foreground: 240 6.7% 93.9%; /* zinc-100 */
+
+    --destructive: 0 72.2% 50.6%; /* red */
+    --destructive-foreground: 0 0% 98%; /* white */
+
+    --border: 240 9% 15.1%; /* zinc-700 */
+    --input: 240 9% 15.1%; /* zinc-700 */
+    --ring: 217.2 91.2% 59.8%; /* blue-600 */
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Cairo', 'Inter', sans-serif;
+  }
+}
+
+/* React Flow Dark Theme Overrides */
+.react-flow__attribution {
+  display: none;
+}
+
+.react-flow__background {
+  background-color: #18181b;
+}
+
+.react-flow__minimap {
+  background-color: #27272a;
+}
+
+.react-flow__controls {
+  background-color: #27272a;
+  border: 1px solid #3f3f46;
+}
+
+.react-flow__controls button {
+  background-color: #27272a;
+  border-color: #3f3f46;
+  color: #e4e4e7;
+}
+
+.react-flow__controls button:hover {
+  background-color: #3f3f46;
+}
+
+.react-flow__edge-path {
+  stroke: #3f3f46;
+}
+
+.react-flow__edge.selected .react-flow__edge-path {
+  stroke: #3b82f6;
+}
+
+.react-flow__handle {
+  background: #3b82f6;
+  border: 2px solid #18181b;
+}
+
+.react-flow__handle-connecting {
+  background: #10b981;
+}
+
+.react-flow__handle-valid {
+  background: #10b981;
+}
